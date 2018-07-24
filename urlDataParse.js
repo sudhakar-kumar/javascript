@@ -1,4 +1,3 @@
-
     // var uri = "my test.asp?name=ståle&car=saab";
     // var enc = encodeURI(uri);
     // var dec = decodeURI(enc);
@@ -23,8 +22,7 @@
 
 
 /* Demo */
-
-// var queryString = window.location.search;
+//var queryString = window.location.search;
 //var queryString = 'https://www.google.co.uk/search?client=safari&rls=en&q=twitter+newmancunian&ie=UTF-8&oe=UTF-8';
 //var queryString = 'https://www.randomweb.com/search?id=safari&name=sudhakar&dept=dev+deploy';
 
@@ -34,7 +32,6 @@ var enc = encodeURI(sampleuri);
 
 var obj = parseQueryString(enc);
 //document.getElementById('result').innerHTML = JSON.stringify(obj);
-console.log(obj);
-console.log(obj.car);
-console.log(obj.name);
-
+console.log(obj); 		// { car: 'audi', name: 'sudhakar mandal' }
+console.log(obj.car);		// audi
+console.log(obj.name);		// sudhakar mandal
